@@ -1,9 +1,17 @@
+---
 swagger: "2.0"
 x-collection-name: Google Beacons
-x-complete: 1
+x-complete: 0
 info:
-  title: Google Proximity Beacon
-  description: registers-manages-indexes-and-searches-beacons-
+  title: Google Proximity Beacon API Get Diagnostics
+  description: |-
+    List the diagnostics for a single beacon. You can also list diagnostics for
+    all the beacons owned by your Google Developers Console project by using
+    the beacon name `beacons/-`.
+
+    Authenticate using an [OAuth access token](https://developers.google.com/identity/protocols/OAuth2)
+    from a signed-in user with **viewer**, **Is owner** or **Can edit**
+    permissions in the Google Developers Console project.
   contact:
     name: Google
     url: https://google.com
@@ -52,3 +60,17 @@ paths:
           description: OK
       tags:
       - Diagnostic
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---
